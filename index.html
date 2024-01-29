@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />  <!-- لینک کردن فایل سی اس اس به فایل اچ تی ام ال-->
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <h2>Expense Tracker</h2>
+
+    <div class="container">
+      <h4>Your Balance</h4>
+      <h1 id="balance">$0.00</h1>     <!-- موجودی فعلی که با هر دخل و خرج مقدار آن تغییر میکند-->
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money plus">+$0.00</p>          <!-- مجموع درآمد-->
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money minus">-$0.00</p>        <!-- مجموع مخارج-->
+        </div>
+      </div>
+
+      <h3>History</h3>
+      <ul id="list" class="list">
+          <!-- تاریخچه دخل و خرج ها که توسط ورودی با کمک جاوا اسکریپت اضافه میشوند -->
+      </ul>
+
+      <h3>Add new transaction</h3>
+      <!-- فرم وارد کردن مخارج -->
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Text</label>
+          <input type="text" id="text" placeholder="Enter text..." />   <!-- وارد کردن عنوان دخل و خرج-->
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Amount <br />
+            (negative - expense, positive - income)</label
+          >
+          <input type="number" id="amount" placeholder="Enter amount..." />          <!-- وارد کردن هزینه  اگر عدد مثبت بود به لیست دخل اضافه میشود اگر عدد منفی بود به لیست مخارج اضافه میشود-->
+        </div>
+        <button class="btn">Add transaction</button>
+      </form>
+      <!-- فرم وارد کردن مخارج -->
+    </div>
+
+    <script src="script.js"></script>   <!-- لینک کردن فایل جاوا اسکریپت به فایل اچ تی ام ال-->
+  </body>
+</html>
