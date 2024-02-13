@@ -13,3 +13,10 @@ every transaction will change your balance
 # Technologies 
 We used HTML/CSS  and vanila JS for this project. 
 we initally wanted to use React JS and Context API but we needed to create a database and according to the size of project we thought it's a lot of work so we use vanila HTML/CSS/JS and used local storage to save data
+
+## Authors
+
+- [Roghayeh Khajehpor](https://github.com/Roghayehkhajehpor)
+- [Arefe Rishehri](https://github.com/001ari)
+- [Amireza Mahmoudi](https://github.com/AmirezaMahmoudi)
+
